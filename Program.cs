@@ -27,6 +27,30 @@ namespace c_sharp_console_app
             Console.ReadLine();
 
 
+
+            double num1;
+            double num2;
+            double num3;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("");
+            Console.Write("Now input a number: ");
+
+            num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Input a second number: ");
+
+            num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Now input a final number: ");
+
+            num3 = Convert.ToDouble(Console.ReadLine());
+
+            double averageOfThreeNumbers = (num1 + num2 + num3) / 3;
+
+            Console.WriteLine("The average of the three numbers are: " + averageOfThreeNumbers);
+
+            //Wait before closing
             Console.ReadKey();
         }
     }
