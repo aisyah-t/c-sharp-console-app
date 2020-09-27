@@ -50,6 +50,57 @@ namespace c_sharp_console_app
 
             Console.WriteLine("The average of the three numbers are: " + averageOfThreeNumbers);
 
+
+            double answer;
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("");
+
+            string question1 = "2 * 5 + 3";
+
+            Console.Write($"Input the answer to the maths problems given\n {question1} = ");
+
+            answer = Convert.ToDouble((Console.ReadLine()));
+
+            if (answer == 2 * 5 + 3)
+            {
+                Console.WriteLine("Woo! That's correct");
+            }
+            else
+            {
+                Console.WriteLine($"That's incorrect. The correct answer is {2 * 5 + 3}.");
+            }
+
+
+            Console.Write("(56 - 33) / 4 * 3 = ");
+
+            answer = Convert.ToDouble((Console.ReadLine()));
+
+            if (answer == (56 - 33) / 4 * 3)
+            {
+                Console.WriteLine("Woo! That's correct");
+            }
+            else
+            {
+                Console.WriteLine($"That's incorrect. The correct answer is {(56 - 33) / 4 * 3}.");
+            }
+
+
+            Console.Write("(2 + 8) * 2 / 4 = ");
+
+            answer = Convert.ToDouble((Console.ReadLine()));
+
+            if (answer == (2 + 8) * 2 / 4)
+            {
+                Console.WriteLine("Woo! That's correct");
+            }
+            else
+            {
+                Console.WriteLine($"That's incorrect. The correct answer is {(2 + 8) * 2 / 4}.");
+            }
+
+
+
             //Wait before closing
             Console.ReadKey();
         }
